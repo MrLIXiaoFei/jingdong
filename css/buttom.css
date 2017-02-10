@@ -1,0 +1,68 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,
+dd,ul,ol,li,pre,form,fieldset,legend,button,input,
+textarea,th,td { margin: 0; padding: 0; border: 0;}
+html { color: #000; }
+body,button,input,select,textarea { font-size: 12px; font-family: 'Microsoft Yahei','微软雅黑', \5FAE\8F6F\96C5\9ED1,'宋体',\5b8b\4f53,arial,'Hiragino Sans GB',Tahoma,Arial,Helvetica; }
+ul,ol,li,dl,dd,dt{list-style: none;}
+em { font-style: normal; }
+a { text-decoration: none; }
+legend { color: #000; }
+fieldset,img { border: 0; }
+label,button { cursor: pointer; }
+/*解决IE图片缩放失真*/
+img { -ms-interpolation-mode: bicubic; }
+/*清除浮动*/
+.clearfix:after { content: ''; display: block; height: 0; clear: both; }
+.clearfix { zoom: 1; }
+/*图标*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/font.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont') format('svg');
+}
+.font{
+	font-family:'iconfont';
+	font-size:18px;
+	color:#999999;
+}
+
+/*footer*/
+#footer{
+	width: 100%;
+	height: 520px;
+	background: rgb(234,234,234);
+	position: relative;
+}
+.footer-top{
+	width: 100%;height: 100px;
+ 	border-bottom: 1px solid #cac8c8;
+ 	position: relative;
+ 	}
+.footer-top ul{position: absolute;top: 30px;left: 120px;}
+.footer-top ul li{width: 230px;height: 34px;
+float: left;position: relative;margin-left: 60px;}
+.footer-top ul li p{position: absolute;top: 10px;left: 60px;
+font-size: 18px;font-weight: bolder;}
+.footer-top ul li:nth-child(1){margin-left: 0px;}
+.footer-mid{width: 1190px;height: 200px;
+border-bottom: 1px solid #cac8c8;margin: auto;
+position: relative;}
+.footer-mid>ul{position: absolute;top: 30px;left: 120px;}
+.footer-mid>ul>li{
+	float: left;width: 210px;height: 200px;
+}
+.footer-mid>ul>li ul li:nth-child(1){
+	font-size: 14px;font-weight: bold;
+}
+.footer-mid>ul>li ul li{margin-top: 5px;}
+.footer-bot{width: 100%;position: relative;}
+.footer-bot .bbb{width: 1190px;height: 200px;position: absolute;top: 10px;left: 50px;}
+.footer-bot .bbb  div a{margin-left: 10px;font-weight: 600;}
+.footer-bot .bbb>div{margin-left: 40px;}
+.footer-bot .bbb div{width: 100%;height: 28px;text-align: center;}
+.bbb div{
+	color: #666666;
+}

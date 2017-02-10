@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的购物车</title>
+		<link rel="shortcut icon"  href="../image/logo.png" type="image/x-icon">
+		<link rel="stylesheet" href="../css/shop.css" />
+		<script type="text/javascript" src="../js/jquery-1.11.0.js" ></script>
+	</head>
+	<body>
+		<!--header-->
+		<div id="header"></div>
+		<!--右边菜单-->
+		<div id="right-float"></div>
+		<!--右边菜单-->
+		<div id="menu"></div>
+		<!--中间内容-->
+		<div id="shopping">
+			<div class="shop">
+				<div class="shop-top">
+					<div class="left">
+						<img src="../imgaes2/10.png">
+					</div>
+					<div class="right">
+						<input type="text" placeholder="自营" />
+						<div class="sousuo">搜索</div>
+					</div>
+				</div>
+				<div class="shop-mid">
+					<img src="../imgaes2/1.jpg">
+					<p>全部商品 1</p>
+					<div class="xuan">
+						<input type="checkbox" />
+						<a>全选</a>
+						<a>商品</a>
+						<a>单价</a>
+						<a>数量</a>
+						<a>小计</a>
+						<a>操作</a>
+					</div>
+					<div class="xuan2">
+						<input type="checkbox" checked="" /><a>麦酷拉旗舰店</a>
+						<img src="../images/ling.gif">
+					</div>
+					<div class="xuan3">
+						<input type="checkbox" checked="" />
+						<div class="pin2"><img src="../imgaes2/20.jpg"></div>
+						<div class="haochi">麦酷拉Maikula M1平衡车两轮 智能成人儿童代步电动车双轮 手机APP遥控体感车</div>
+						<div style="margin-left: 15px;">颜色：大众炫酷版-白色</div>
+						<div class="jiage">¥1469.00</div>
+						<div class="jiajia"><input type="number" value="1" step="1" min="1">
+							<input id="typ"value="=" type="button" />
+						</div>
+						<div class="goula">¥1469.00</div>
+						<div class="zui">
+							<p>删除</p>
+							<p>移到我的关注</p>
+						</div>
+					</div>
+					<div class="jiesuan2">
+						<input type="checkbox" checked="" />
+						<a>删除选中的商品</a>
+						<a>移到我的关注</a>
+						<a>清除下柜商品</a>
+						<a class="shu">已选择一件商品</a>
+						<a class="cao2">总价：</a>
+						<a class="cao3">￥1469.00</a>
+						<div class="shui"><a href="money.html" style="color:white;" target="_blank">去结算</a></div>
+					</div>
+				</div>
+				<div class="shop-bot">
+					<div class="tab">
+						<ul>
+							<li class="low">猜你喜欢
+								<div class="love hello">
+									<ul>
+										<li>
+											<img src="../images/shop3.jpg">
+											<div>【京东超市】福临门 五常长粒香 五常大米 中粮出品 大米 5kg</div>
+											<div class="gou font">&#xe605;<a>购物车</a></div>
+										</li>
+										<li>
+											<img src="../images/shop4.jpg">
+											<div>三星 Galaxy S7 edge（G9350）4GB+32GB版 铂光金移动联通电信4G</div>
+											<div class="gou font">&#xe605;<a>购物车</a></div>
+										</li>
+										<li>
+											<img src="../images/shop5.jpg">
+											<div>小米（MI）智能手环1代【光感心率版】小米手环 黑色腕带 LED指示灯 运</div>
+											<div class="gou font">&#xe605;<a>购物车</a></div>
+										</li>
+										<li>
+											<img src="../images/shop6.jpg">
+											<div>金士顿（King）16GB 80MB/s TF(Micro SD)Class10 高速存储卡</div>
+											<div class="gou font">&#xe605;<a>购物车</a></div>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="low">我的关注
+								<div class="my hello">登录后将显示您之前关注的商品</div>
+							</li>
+							<li class="low">最近浏览
+								<div class="zuijin hello">暂时无结果</div>
+							</li>
+						</ul>
+						<div class="anniu">
+							<ul>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+						</div>
+					</div>
+				</div>		
+			</div>			
+		</div>
+		<!--bottom-->
+		<div id="bottom"></div>
+	</body>
+	<script>
+		$('#header').load('together-top.html');
+		$('#bottom').load('bottom.html');
+		$('#menu').load('right.html');
+		
+		//
+		$('.low').css({'color':'','border-bottom':''})
+		.eq(0).css({'color':'#e4393c','border-bottom':'2px solid red'})
+		$('.low').mouseover(function(){
+		var index=$(this).index('.low')
+		$('.hello').css('display','none').eq(index).css('display','block');
+		$('.low').css({'color':'','border-bottom':''})
+		.eq(index).css({'color':'#e4393c','border-bottom':'2px solid red'})
+	})
+		
+		//乘法
+		var $=function(ID){return document.getElementById(ID);};
+		$("typ").onclick=function(){
+		 if(/^\d+$/.test($(".jiajia input").val())){
+		  $('.goula,.cao3').text('￥'+$(".jiajia input").val()*1469+'.00');
+		 } 
+		}
+	</script>
+</html>

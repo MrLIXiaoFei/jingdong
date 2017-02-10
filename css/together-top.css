@@ -1,0 +1,338 @@
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,
+dd,ul,ol,li,pre,form,fieldset,legend,button,input,
+textarea,th,td { margin: 0; padding: 0; border: 0;}
+html { color: #000; }
+html,body { height: 100%; }
+body,button,input,select,textarea { font-size: 12px; font-family: 'Microsoft Yahei','微软雅黑', \5FAE\8F6F\96C5\9ED1,'宋体',\5b8b\4f53,arial,'Hiragino Sans GB',Tahoma,Arial,Helvetica; }
+ul,ol,li,dl,dd,dt{list-style: none;}
+em { font-style: normal; }
+a { text-decoration: none; }
+legend { color: #000; }
+fieldset,img { border: 0; }
+label,button { cursor: pointer; }
+html{background: #f6f6f6;}
+/*解决IE图片缩放失真*/
+img { -ms-interpolation-mode: bicubic; }
+/*清除浮动*/
+.clearfix:after { content: ''; display: block; height: 0; clear: both; }
+.clearfix { zoom: 1; }
+/*图标*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('../font/font.eot');
+  src: url('../font/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../font/iconfont.woff') format('woff'),
+  url('../font/iconfont.ttf') format('truetype'),
+  url('../font/iconfont.svg#iconfont') format('svg');
+}
+
+.font{
+	font-family:'iconfont';
+	font-size:18px;
+	color:#999999;
+}
+/*header*/
+#header{
+	width: 100%;
+	height: 31px;
+	background: #e3e4e5;
+	border-bottom:1px solid  #b0afaf;
+}
+.beijing span{
+	color: #a1a2a2;
+	width: 25px;
+	height: 31px;
+	line-height: 31px;
+	text-align: center;
+}
+.beijing .font{
+	color: #da031e;
+	margin-left: 15px;
+}
+.beijing{
+	float: left;
+	margin-left: 290px;
+}
+.beijing .map{
+	display: inline-block;
+	width: 50px;
+	height: 30px;
+	position: relative;
+	left: -12px;top: -2px;
+}
+.beijing:hover .map-one{
+	display: block;
+}
+.beijing:hover{
+	background: white;
+}
+/*地点*/
+.map-one{
+	z-index: 100;
+	background: white;
+	border: 1px solid #cbcccd;
+	border-top: 0px;
+	display: none;
+	padding: 10px;
+	box-sizing: border-box;
+	position: absolute;
+	top: 30px;
+	width:310px;
+	height: 220px;
+}
+.map-one ul li{
+	list-style: none;
+	width: 310px;
+	height: 30px;
+}
+.map-one ul li a{
+	cursor: pointer;
+	color: #a1a2a2;
+	display: inline-block;
+	width: 40px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	margin-left: 12px;
+}
+.map-one ul li a:hover{
+	background: #cecfcf;
+}
+.map-one ul li .red{
+	color: white;
+	background: #ee0324;
+}
+.header-right{
+	height: 31px;
+	width: 660px;
+	margin-left: 600px;
+	}
+
+.header-right ul .gexian{
+	width: 10px;
+	color: #c9c9c9;
+}
+.header-right ul .white:hover{
+
+	border-left: 1px solid #cbcccd;
+	border-right: 1px solid #cbcccd;
+}
+.header-right ul li{
+	cursor: pointer;
+	color: #a1a2a2;
+	float: left;
+	width: 74px;
+	height: 31px;
+	line-height: 31px;
+	text-align: center;
+}
+.header-right ul .font{
+	margin-left: -16px;
+	display: inline-block;
+	width: 1px;
+	height: 30px;
+	line-height: 33px;
+	text-align: center;
+}
+.header-right ul li a:hover{
+	color: #bf0000;
+}
+.header-right ul li span{
+	display: inline-block;
+	width: 6px;
+	margin-right: 5px;
+	margin-top: -2px;
+}
+.header-right ul .white{
+	border: 1px solid transparent;
+}
+.header-right ul .white:hover{
+	background: white;
+}
+/*我的京东*/
+.JD{
+	z-index: 100;
+	border: 1px solid #cbcccd;
+	border-top: 0px;
+	width: 280px;
+	height: 165px;
+	position: relative;
+	display: none;
+	background: white;
+}
+.white:hover .JD{
+	display: block;
+}
+.JD ul li:nth-child(1){
+	margin-top: 8px;
+}
+.JD ul li{
+	width: 279px;
+	height: 30px;
+}
+.JD ul li a:nth-child(1){
+	margin-left: 15px;
+}
+.JD ul li:nth-child(4){
+	margin-top: 8px;
+	border-top: 1px dashed #babbbb;
+}
+.JD ul li a{
+	text-align: left;
+	display: inline-block;
+	width: 100px;
+	height: 30px;
+	margin-left: 40px;
+}
+/*客户服务*/
+.FW{
+	z-index: 100;
+	border: 1px solid #cbcccd;
+	border-top: 1px solid white;
+	width: 170px;
+	height: 200px;
+	position: relative;
+	visibility: hidden;
+}
+.FW ul li{
+	width: 170px;
+	height: 20px;
+	margin-top: 5px;
+}
+.FW ul li a{
+	margin-left: 20px;
+	display: inline-block;
+	width: 60px;
+	height: 20px;
+	text-align: left;
+	float: left;
+}
+.FW ul li:nth-child(6){
+	margin-top: 15px;
+	border-top: 1px dashed #babbbb;
+}
+.BB{
+	font-weight: bold;
+	color: #9f9e9e;
+}
+.white:hover .FW{
+	visibility: visible;
+}
+/*网站导航*/
+.DH{
+	z-index: 100;
+	visibility: hidden;	
+	border: 1px solid #cbcccd;	
+	width: 1190px;
+	height: 190px;
+	background: white;
+	border-top: 1px solid white;
+	position: absolute;
+	left: 66px;
+}
+.DH-one,.DH-two,.DH-three,.DH-four{
+	margin-left: 5px;
+	width: 280px;
+	height: 180px;
+	float: left;
+	position: relative;
+}
+.DH-one{
+	width: 330px;
+}
+
+.DH div ul{
+	position: absolute;
+	top: 0;
+	width: 280px;
+	height: 180px;
+}
+.DH div ul li{
+	width: 280px;
+	height: 30px;
+}
+.DH ul li a{
+	margin-left: 5px;
+	display: inline-block;
+	height: 30px;
+	width: 75px;
+	float: left;
+	line-height: 30px;
+	text-align: left;	
+}
+.first{
+	float: left;
+	margin-left: 20px;
+}
+.DH-one ul .cao{
+	width: 330px;
+}
+.first{
+	font-weight: bold;
+	color: #676767;
+}
+.white:hover .DH{
+	visibility: visible;
+}
+.border{
+	width: 250px;
+	height: 160px;
+	border-right: 1px solid #efefef;
+	position: absolute;
+	top: 20px;
+}
+.border-one{
+	width: 300px;
+	height: 160px;
+	border-right: 1px solid #efefef;
+	position: absolute;
+	left: 20px;top: 20px;
+}
+.mama{
+	position: relative;
+	width: 67px;
+	height: 67px;
+	border: 1px solid #b4b3b3;
+}
+.ma img{
+	width: 67px;	
+}
+.three-ma{
+	display: none;
+	z-index: 300;
+	position: absolute;
+	top: 0;right: -10px;
+	width: 190px;
+	height: 320px;
+	border: 1px solid #eaeaea;
+	border-bottom: 3px solid #929090;
+	background: white;
+}
+.three-ma>div{
+	position: relative;
+	padding: 15px;
+	box-sizing: border-box;
+	width: 190px;
+	height: 106px;
+	border-bottom: 1px solid #eaeaea;
+}
+.three-ma>div img{
+	float: left;
+}
+.three-ma div div p{color: #727171;font-size: 12px;
+font-weight: bold;float: left;
+margin-left: 5px;}
+.three-ma div div a{
+	position: absolute;
+	left: 85px;top: 50px;
+	font-size: 8px;
+	float: left;
+	color: red;
+	display: inline-block;
+	width: 90px;
+	height: 30px;
+	line-height: 15px;
+}
+.mama:hover .three-ma{
+	display: block;
+}

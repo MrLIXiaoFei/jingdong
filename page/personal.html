@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的订单</title>
+		<link rel="shortcut icon"  href="../image/logo.png" type="image/x-icon">
+		<script type="text/javascript" src="../js/jquery-1.11.0.js" ></script>
+		<link rel="stylesheet" href="../css/personal.css" />
+	</head>
+	<body>
+		<!--头部-->
+		<div id="header"></div>
+		<!--body-->
+		<div id="top">
+			<img src="../imgaes2/logo.png">
+			<div class="top-one">
+				<div class="one">我的京东</div>
+				<div class="two">返回京东首页</div>
+			</div>
+			<div class="top-two">
+				<ul>
+					<li><a style="color: white;" href="../index.html" target="_blank">首页</a></li>
+						<li class="tab"><a>账户设置</a>
+							<div class="shezhi">
+								<ul>
+									<li>个人信息</li>
+									<li>账户安全</li>
+									<li>账号绑定</li>
+									<li>我的级别</li>
+									<li>收货地址</li>
+									<li>分享绑定</li>
+									<li>邮件订阅</li>
+									<li>消费记录</li>
+									<li>应用授权</li>
+									<li>快捷支付</li>
+									<li>增票资质</li>
+									<li>企业发票</li>
+									<li>采购需求单</li>
+								</ul>
+							</div>
+						</li>
+						<li class="tab"><a>社区</a>
+							<div class="shezhi" style="height: 130px;">
+								<ul>
+									<li>个人主页</li>
+									<li>我的活动</li>
+									<li>我的圈子</li>
+									<li>我的帖子</li>
+								</ul>
+							</div>
+
+						</li>
+					<li><a>消息</a></li>
+				</ul>
+			</div>
+			<div class="top-three">
+				<input type="text" placeholder="赶快来买买买！" />
+				<div class="sou">搜索</div>
+			</div>
+			<div class="search-two">
+				<div class="hover-one"><span class="font">&#xe672;</span>
+					<span><a href="shopping.html" target="_blank" style="color: #969896;">我的购物车</a></span>	
+				<div class="yuan" style="color: white;font-size: 10px;">0</div>
+				</div>
+				<div class="search-three">
+					<span style="font-size: 35px;color: #A1A2A2;" class="font">&#xe672;</span>
+					<span>购物车中还没有商品，赶紧选购吧！</span>
+				</div>
+			</div>
+		</div>
+		<div id="body">
+			<div class="hexin4">
+				<div class="body-left">
+					<div>
+						<ul>
+							<li class="bb">订单中心</li>
+							<li class="ding">我的订单</li>
+							<li>团购订单</li>
+							<li>本地生活订单</li>
+							<li>我的预售</li>
+							<li>评价晒单</li>
+							<li>取消订单记录</li>
+							<li>我的常购商品<img src="../imgaes2/3.png"></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li class="bb">关注中心</li>
+							<li>关注的商品</li>
+							<li>关注的店铺</li>
+							<li>关注的专辑</li>
+							<li>关注的品牌</li>
+							<li>关注的活动</li>
+							<li>浏览历史</li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li class="bb">资产中心</li>
+							<li>小金库<img src="../imgaes2/3.png"></li>
+							<li>京东白条</li>
+							<li>小白理财</li>
+							<li>京东福卡</li>
+							<li>余额</li>
+							<li>优惠券</li>
+							<li>京东卡/E卡</li>
+							<li>京东图书卡</li>
+							<li>京豆</li>
+							<li>京东钢镚<img src="../imgaes2/3.png"></li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li class="bb">特色业务</li>
+							<li>我的营业厅</li>
+							<li>京东通信</li>
+							<li>定期送</li>
+							<li>京东代下单<img src="../imgaes2/3.png"></li>
+							<li>我的回收单</li>
+							<li>节能补贴</li>
+							<li>医药服务</li>
+							<li>流量加油站</li>
+							<li>黄金托管</li>
+							<li>视频教育订单<img src="../imgaes2/3.png"></li>
+							<li>海外房产预约</li>
+							<li>我的全球购</li>
+							<li>装修服务</li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li class="bb">客户服务</li>
+							<li>返修退换货</li>
+							<li>价格保护</li>
+							<li>意见建议</li>
+							<li>我的问答<img src="../imgaes2/3.png"></li>
+							<li>购买咨询</li>
+							<li>交易纠纷</li>
+							<li>京东维修</li>
+							<li>上门预约服务</li>
+							<li>我的发票<img src="../imgaes2/3.png"></li>
+							<li>举报中心</li>
+						</ul>
+					</div>
+					<div>
+						<ul>
+							<li class="bb">设置</li>
+							<li>个人信息</li>
+							<li>收货地址</li>
+						</ul>
+					</div>
+				</div>
+				<div class="body-right">
+					<img src="../imgaes2/1.jpg">
+					<div class="my">我的订单</div>
+					<div class="jie">
+						<div class="tab4">							
+							<div class="rong"><a class="cu">全部订单</a><a>待付款</a><a>待收货</a><a>待评价</a></div>
+							<div class="rong2"><a>我的常购商品</a><a>特价·清仓订单</a><a>回收站</a></div>
+							<div class="rong3"><input type="text" placeholder="商品名称/商品编码/订单号">
+								<div class="sousuo2">搜索</div><div class="sousuo2 sousuo3">高级<span class="font">&#xe631;</span></div>
+							</div>
+						</div>
+						<div class="leixing">					                
+							<a>订单类型：</a><a>全部类型</a><a>机票实物商品</a>
+							<a>酒店</a><a>租车</a><a>度假</a><a>游戏火车门票</a>
+							<a>手机充值</a><a>电影票</a><a>演出票</a><a>电子书</a>
+							<a>数字音乐</a><a>应用商店</a><a>彩票</a><a>团购 </a>
+							<a>保险</a><a>夺宝岛 </a><a class="zou">加油卡</a><a class="zou2">一元抢宝</a>
+							<div class="fan">返回</div>
+						</div>
+						<div class="dan">					
+							<div class="dingdan">近三个月订单<span class="font">&#xe631;</span>
+								<div class="dingdan2">
+									<ul>
+										<li>近三个月订单</li>
+										<li>今年内订单</li>
+										<li>2016年订单</li>
+										<li>2015年订单</li>
+										<li>2014年订单</li>
+										<li>2013年订单</li>
+									</ul>
+								</div>
+							</div>
+							<div class="xiang">订单详情</div>
+							<div class="qing2">收货人</div>
+							<div class="qing2">金额</div>
+							<div class="qing2 gao">全部状态<span class="font">&#xe631;</span>
+								<div class="dingdan3">
+									<ul>
+										<li>全部状态</li>
+										<li>等待付款</li>
+										<li>等待收货</li>
+										<li>已完成</li>
+										<li>已取消</li>
+									</ul>
+								</div>
+							</div>
+							<div class="qing2">操作</div>
+							<div class="dog2">
+								<img src="../imgaes2/2.png">
+								<div class="dan2">
+									<p>最近没有下过订单哦~</p>
+									<div class="caini">查看全部订单</div>
+									<div class="caini caoni2"><a style="color: white;" href="../index.html" target="_blank">去首页看看</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="mai">
+						<div><a class="right2">买什么</a><a style="float: right;">查看更多商品专辑</a></div>
+						<div class="san">
+							<p>过年聚会你会拍照嘛</p>
+							<div class="this"><span class="font">&#xe665;</span>不入魔不成仙
+								<div class="aixin">
+									<div><span class="font">&#xe66f;</span>29</div>
+									<div><span class="font">&#xe61c;</span>17</div>
+								</div>
+							</div>
+							<div class="kuang">
+								<div class="biggle">
+									<img src="../imgaes2/2.jpg">
+								</div>
+								<div class="small">
+									<div class="no-left"><img src="../imgaes2/3.jpg"></div>
+									<div><img src="../imgaes2/4.jpg"></div>
+									<div class="xialai no-left"><img src="../imgaes2/5.jpg"></div>
+									<div class="xialai"><img src="../imgaes2/6.jpg"></div>
+								</div>
+							</div>
+						</div>
+						<div class="san">
+							<p>客人来访，要体面</p>
+							<div class="this"><span class="font">&#xe665;</span>无知苟且
+								<div class="aixin">
+									<div><span class="font">&#xe66f;</span>19</div>
+									<div><span class="font">&#xe61c;</span>7</div>
+								</div>
+							</div>
+							<div class="kuang">
+								<div class="biggle">
+									<img src="../imgaes2/6.jpg">
+								</div>
+								<div class="small">
+									<div class="no-left"><img src="../imgaes2/7.jpg"></div>
+									<div><img src="../imgaes2/8.jpg"></div>
+									<div class="xialai no-left"><img src="../imgaes2/9.jpg"></div>
+									<div class="xialai"><img src="../imgaes2/6.jpg"></div>
+								</div>
+							</div>
+						</div>
+						<div class="san">
+							<p>过年聚会不用愁送你气死前男友</p>
+							<div class="this"><span class="font">&#xe665;</span>不入魔不成仙
+								<div class="aixin">
+									<div><span class="font">&#xe66f;</span>38</div>
+									<div><span class="font">&#xe61c;</span>66</div>
+								</div>
+							</div>
+							<div class="kuang">
+								<div class="biggle">
+									<img src="../imgaes2/10.jpg">
+								</div>
+								<div class="small">
+									<div class="no-left"><img src="../imgaes2/11.jpg"></div>
+									<div><img src="../imgaes2/12.jpg"></div>
+									<div class="xialai no-left"><img src="../imgaes2/13.jpg"></div>
+									<div class="xialai"><img src="../imgaes2/14.jpg"></div>
+								</div>
+							</div>
+						</div>
+						<!--<div class="left-an"><</div>
+						<div class="right-an">></div>-->
+					</div>
+					<div class="xihuan">
+						<div class="an">
+							<a class="right2">买什么</a><div class="god">3</div><div class="god">2</div><div class="god">1</div>
+						</div>
+						<div class="chanpin" style="display: block;">
+							<div>
+								<img src="../imgaes2/19.jpg">							
+								<div class="shao">
+									<p>麦酷拉Maikula M1平衡车两轮 智能成人儿童代步电动车双轮 </p>
+									<span>￥1498.20</span>
+									<br />
+									<a>(已有2581人评价)</a>
+								</div>
+							</div>
+							<div>
+								<img src="../imgaes2/20.jpg">							
+								<div class="shao">
+									<p>阿尔郎 双轮电动人智能代步体感车自平衡车儿童手扶扭扭车 </p>
+									<span>￥1200.20</span>
+									<br />
+									<a>(已有4485人评价)</a>
+								</div>
+							</div>
+							<div>
+								<img src="../imgaes2/21.jpg">
+								<div class="shao">
+									<p>【京东超市】鲁花 5S 压榨一级 花生油 4L</p>
+									<span>￥1253.80</span>
+									<br />
+									<a>(已有881人评价)</a>
+								</div>
+							</div>
+							<div>
+								<img src="../imgaes2/22.jpg">							
+								<div class="shao">									
+									<p>【京东超市】花王（Merries）婴儿纸尿裤/尿不湿 大号L54</p>
+									<span>￥1628.235</span>
+									<br />
+									<a>(已有754人评价)</a>
+								</div>
+							</div>
+							<div>
+								<img src="../imgaes2/23.jpg">							
+								<div class="shao">
+									<p>麦酷拉Maikula M1平衡车两轮 智能成人儿童代步电动车双轮 </p>
+									<span>￥1545.20</span>
+									<br />
+									<a>(已有291人评价)</a>
+								</div>
+							</div>
+						</div>
+						<!--2222-->
+						<div class="chanpin">
+							<div>
+								<img src="../imgaes2/24.jpg">							
+								<div class="shao">
+									<p>麦酷拉Maikula M1平衡车两轮 智能成人儿童代步电动车双轮 </p>
+									<span>￥1498.20</span>
+									<br />
+									<a>(已有2581人评价)</a>
+								</div>
+							</div>
+							<div>
+								<img src="../imgaes2/25.jpg">							
+								<div class="shao">
+									<p>阿尔郎 双轮电动人智能代步体感车自平衡车儿童手扶扭扭车 </p>
+									<span>￥1200.20</span>
+									<br />
+									<a>(已有4485人评价)</a>
+								</div>
+							</div>
+							<div>
+								<img src="../imgaes2/26.jpg">
+								<div class="shao">
+									<p>【京东超市】鲁花 5S 压榨一级 花生油 4L</p>
+									<span>￥1253.80</span>
+									<br />
+									<a>(已有881人评价)</a>
+								</div>
+							</div>
+							<div>
+								<img src="../imgaes2/27.jpg">							
+								<div class="shao">									
+									<p>【京东超市】花王（Merries）婴儿纸尿裤/尿不湿 大号L54</p>
+									<span>￥1628.235</span>
+									<br />
+									<a>(已有754人评价)</a>
+								</div>
+							</div>
+							<div>
+								<img src="../imgaes2/28.jpg">							
+								<div class="shao">
+									<p>麦酷拉Maikula M1平衡车两轮 智能成人儿童代步电动车双轮 </p>
+									<span>￥1545.20</span>
+									<br />
+									<a>(已有291人评价)</a>
+								</div>
+							</div>
+						</div>
+						<!--3333-->
+						<div class="chanpin">							
+							<div>
+								<img src="../imgaes2/29.jpg">
+								<div class="shao">
+									<p>【京东超市】鲁花 5S 压榨一级 花生油 4L</p>
+									<span>￥1253.80</span>
+									<br />
+									<a>(已有881人评价)</a>
+								</div>
+							</div>
+							<div>
+								<img src="../imgaes2/30.jpg">							
+								<div class="shao">									
+									<p>【京东超市】花王（Merries）婴儿纸尿裤/尿不湿 大号L54</p>
+									<span>￥1628.235</span>
+									<br />
+									<a>(已有754人评价)</a>
+								</div>
+							</div>
+							<div>
+								<img src="../imgaes2/20.jpg">							
+								<div class="shao">
+									<p>麦酷拉Maikula M1平衡车两轮 智能成人儿童代步电动车双轮 </p>
+									<span>￥1545.20</span>
+									<br />
+									<a>(已有291人评价)</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="guang">
+						<img src="../imgaes2/17.jpg">
+						<img style="margin-top: 10px;" src="../imgaes2/18.jpg">
+					</div>
+				</div>
+			</div>		
+		</div>
+		<!--footer-->
+		<div id="footer"></div>
+	</body>
+	<script>
+		$('#header').load('together-top.html');
+		$('#footer').load('bottom.html');
+		
+		
+		$('.sousuo2').click(function(){
+			$('.leixing').css('display','block')
+		})
+		
+		
+		$('.fan').click(function(){
+			$('.leixing').css('display','')
+		})
+		
+		
+		$('.dingdan').hover(function(){
+			$('.dingdan2').css('visibility','visible')
+		},function(){
+			$('.dingdan2').css('visibility','')
+		})
+		
+		
+		
+		$('.gao').hover(function(){
+			$('.dingdan3').css('visibility','visible')
+		},function(){
+			$('.dingdan3').css('visibility','')
+		})
+		
+		$('.god').eq(2).css({'background':'#e45050','color':'white'})
+		$('.god').mouseover(function(){
+		var index=$(this).index('.god')-1;
+		$('.chanpin').css('display','none').eq(index).css('display','block');
+		$('.god').css({'background':'','color':''}).eq(index+1).css({'background':'#e45050','color':'white'})
+	})
+	</script>
+</html>

@@ -1,0 +1,226 @@
+*{margin: 0;padding: 0;border: 0;}
+li{list-style: none;}
+a{text-decoration: none;}
+html{font-family: "微软雅黑";}
+/*top*/
+#top{
+	width: 100%;
+	height: 100px;
+	box-shadow: 0px 3px 5px #B4B3B3;
+	}
+.top-left{width: 300px;
+	height: 80px;float: left;
+	margin-left: 80px;}
+.top-left img{margin-top: 20px;}
+.top-left p{display: inline-block;
+	font-size:24px ;font-weight: 500;
+	position: absolute;
+	top: 30px;left: 260px;
+	}
+.top-right{width: 160px;
+	height: 80px;
+	position: relative;
+	float: right;
+	bottom: 10px;right: 200px;}
+.top-right p{
+	color: #6e6e6e;
+	font-size: 16px;
+	margin-top: 80px;
+	margin-left:30px ;
+}
+/*mid*/	
+#mid{width: 100%;
+	height: 745px;
+	border-bottom: 1px solid #B4B3B3;
+	}
+.mid-mid{height: 640px;
+	width: 920px;
+	margin:70px auto;
+	}
+.mid-left{
+	width: 525px;
+	height: 640px;
+	float: left;
+	border-right: 1px solid #CCCCCC;
+}
+.mid-right{
+	width: 394px;
+	height: 640px;
+	float: right;
+}
+.middle{width: 300px;
+	height: 460px;
+	margin: auto;
+	}
+.one{width: 100%;
+	height: 65px;}
+.one span{color: #666666;width: 100px;display: inline-block;}
+.one span:nth-child(1){margin-left: 50px;}
+.one span:nth-child(2){margin-left: -30px;margin-top: 10px;}
+.two img{margin-left: 40px;}
+.one span:nth-child(2):hover{font-weight: bold;}
+.three{border-bottom: 1px solid #EAEAEA;}
+.middle-one{width: 400px;
+	height: 640px;
+	margin-left: 20px;
+	border: 1px solid white;}
+.middle-one ul li{
+	width: 396px;
+	height: 50px;
+	border: 1px solid #CBCCCD;
+	margin-top: 30px;
+	position: relative;
+}
+.middle-one ul li:nth-child(1){
+	margin-top: 0px;
+}
+.middle-one ul li a:not(.lihai){
+	width: 350px;
+	color: #A9A8A8;
+	font-size: 13px;
+	position: absolute;
+	top: 55px;left: 5px;
+	height: 25px;
+}
+.remove{
+	display: none;
+}
+.remove2{
+	display: block;
+}
+.middle-one ul li label{
+	display: inline-block;
+	width: 115px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: white;
+	letter-spacing: 10px;
+	font-size: 14px;
+}
+.middle-one ul li input{
+	outline: none;
+	width: 280px;
+	height: 50px;
+	position: absolute;
+	top: 0px;
+}
+.php{border-right: 1px solid #D6D4D4;
+	display: inline-block;
+	width: 115px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: white;
+	letter-spacing: 10px;
+	font-size: 14px;}
+.middle-one ul li span{position: absolute;
+	top: 13px;left: 20px;
+	font-size: 12px;}
+.middle-one ul li .you{position: absolute;left: 320px;top: -25px;
+color: #079EEC;cursor: pointer;}
+.button{
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	color: white;
+	font-size: 22px;
+	font-weight: bold;
+	background: #ee2222;
+}
+.yan{background: url(../images/yan_12.png) no-repeat 165px;
+}
+.yanzheng .ma2{
+	width: 50px;
+	height: 30px;
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: red;
+	position: relative;
+	left:330px;top: -40px;
+	background: url(../images/100.jpg);
+	background-repeat: no-repeat;
+}
+/*bot*/
+#bot{
+	width: 100%;
+	height: 115px;
+}
+#bot{
+	width: 100%;
+	height: 105px;
+	font-size: 13px;}
+#bot div{
+	height: 30px;
+	text-align: center;
+	line-height: 30px;
+	color: #666666;}
+#bot div a{
+	margin-left: 5px;
+	width: 50px;height: 30px;}
+#bot div p{
+	font-size: 12px;}
+/*right-float*/
+.right-float{
+	width: 35px;
+	height: 140px;
+	background: #bbbbbb;
+	position: fixed;
+	right: 0;top: 340px;
+	border-radius: 10px 0 0 10px;
+}
+.right-float:hover{
+	background: rgb(238,34,34);
+}
+.right-float:hover .diaocha{
+	background: rgb(238,34,34);
+}
+select{
+	outline: none;
+}
+.diaocha{
+	padding:0px 5px;
+	box-sizing: border-box;
+	width: 25px;
+	height: 100px;
+	margin-left: 5px;
+	margin-top: 20px;
+	color: white;
+	font-size: 14px;
+}
+.diaocha img{margin-left: -3px;}
+.denglu3{
+	display: none;
+	width: 100%;
+	height: 700px;
+	background: rgba(50,50,50,0.6);
+	line-height: 150px;
+	text-align: center;
+	position: fixed;
+	top: 0;left: 0;
+}
+.denglu4{
+	background: #BF0000;
+	width: 300px;
+	height: 120px;
+	opacity: 3;
+	line-height: 100px;
+	text-align: center;
+	font-size: 25px;
+	color: white;
+	position: absolute;
+	top: 250px;left: 40%;
+}
+.denglu5{
+	width: 70px;
+	height: 30px;
+	background: greenyellow;
+	font-size: 16px;
+	border-radius: 10px;
+	line-height: 30px;
+	text-align: center;
+	position: relative;
+	top: -20px;left: 110px;
+	cursor: pointer;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>右边菜单</title>
+		<link rel="stylesheet" href="../css/right.css" />
+		<script type="text/javascript" src="../js/jquery-1.11.0.js" ></script>
+	</head>
+	<body>
+		<!--右边菜单栏-->
+		<div id="fix_right">
+			<div class="fix_right-one">
+				<div class="img-one">
+					<img src='../image/fix_right.png'/>				
+				</div>							
+			</div>
+			<ul>
+				<li><span class="font">&#xe665;</span>
+					<div>京东会员</div>
+				</li>
+				<li><span class="font">&#xe672;</span>
+					<div>购物车</div>
+				</li>
+				<li><span class="font">&#xe66f;</span>
+					<div>我的关注</div>
+				</li>
+				<li><span class="font">&#xe659;</span>
+					<div>我的足迹</div>
+				</li>
+				<li><span class="font">&#xe63d;</span>
+					<div>我的消息</div>
+				</li>
+				<li><span class="font">&#xe645;</span>
+					<div>我的JIMI</div>
+				</li>
+				<li class="TOP top"><span class="font">&#xe655;</span>
+					<div>顶部</div>
+				</li>
+				<li><span class="font">&#xe656;</span>
+					<div>反馈</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script>
+		$('#fix_right ul li').hover(function(){	
+		var index=$(this).index()
+		$('#fix_right ul li div').eq(index).addClass('move')
+	},function(){
+		var index=$(this).index()
+		$('#fix_right ul li div').eq(index).removeClass('move')
+	})
+		
+		$('.top').click(function(){
+		$('html,body').scrollTop(0)
+	})
+	</script>
+</html>

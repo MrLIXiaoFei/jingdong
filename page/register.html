@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>个人注册</title>
+		<link rel="shortcut icon"  href="../image/logo.png" type="image/x-icon">
+		<link rel="stylesheet" href="../css/register.css" />
+		<script type="text/javascript" src="../js/jquery-1.11.0.js" ></script>
+	</head>
+	<body>
+		<!--top-->
+		<div id="top">
+			<div class="top-left" style="display: block;">
+				<img src="../images/logo.png">
+				<p>欢迎注册</p>
+			</div>
+			<div class="top-right">
+				<p>已有账号？请登录</p>
+			</div>
+		</div>
+		<!--middle-->
+		<div id="mid">
+			<div class="mid-mid">
+				<div class="mid-left">
+					<div class="middle-one">
+						<ul>
+							<li>
+								<label>用户名</label>
+								<input type="text" placeholder="您的账户名和账号"/>
+								<a class="zaici2">支持中文、字母、数字、“-”“_”的组合，4-20个字符"</a>
+							</li>
+							<li>
+								<label>设置密码</label>
+								<input type="password" placeholder="建议使用两种符号或者字符" />
+								<a>支持中文、字母、数字、“-”“_”的组合，4-20个字符"</a>
+							</li>
+							<li>
+								<label>确认密码</label>
+								<input type="password" placeholder="再次输入密码" />
+								<a class="zaici">请再次输入密码</a>
+							</li>
+							<li>
+								<select class="php"><option>确认密码</option></select>
+								<input type="password" placeholder="建议使用常用手机" />
+								<a>完成验证后，你可以用该手机登录和找回密码</a>
+							</li>
+							<li class="yanzheng">
+								<span class="you">邮箱验证</span>
+								<label>验证码</label>
+								<input class="ma" type="text" placeholder="请输入验证码" />
+								<div class="ma2" id="yzm">1651</div>
+								<a class="yan2" style="cursor: pointer;">看不清？点击图片更换验证码</a>
+							</li>
+							<li>
+								<label style="letter-spacing: 5px;">手机验证码</label>
+								<input class="yan" type="text" placeholder="请输入手机验证码" />
+							</li>
+							<li style="border: none;">
+								<input style="width: 15px;" class="chen" type="checkbox" checked="" />
+								<span>我已阅读并同意<a class="lihai" style="color: dodgerblue;">《京东用户注册协议》</a></span>
+							</li>
+							<li>
+								<input style="width: 398px;" class="button" type="submit" value="立即注册" />
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="mid-right">
+					<div class="middle">
+						<div class="one three">
+							<span class="">
+								<img src="../images/zhuce.png">
+							</span>
+							<span class="">企业用户注册</span>
+						</div>
+						<div class="one">
+							<span class="">
+								<img src="../images/zhuce2.png">
+							</span>
+							<span class="">INTERNATIONAL
+CUSTOMERS
+</span>
+						</div>
+						<div class="two">
+							<img src="../images/zhuce3.png">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--bottom-->
+		<div id="bot">
+			<div style="margin-top: 10px;">
+				<a>关于我们</a><a>|</a><a> 联系我们</a><a>|</a><a>人才招聘</a><a>|</a><a>商家入驻</a><a>|</a><a>广告服务</a><a>|</a><a> 手机京东</a><a>|</a><a>友情链接</a><a>|</a><a>销售联盟</a><a>|</a><a>京东公益</a><a>|</a><a>English Site</a>
+			</div>
+			<div><p>Copyright © 2004-2017  京东JD.com 版权所有</p></div>
+		</div>
+		<div class="right-float">
+			<div class="diaocha">
+				<img src="../images/zhuce5.png">
+			调查问卷
+			</div>
+		</div>
+		<div class="denglu3">
+			<div class="denglu4">恭喜您！注册成功
+				<div class="denglu5"><a href="entry.html" target="_blank" style="color: #313131;font-size: 13px;">点击登陆</a></div>
+			</div>
+		</div>
+	</body>
+	<script>
+			 function yzm(){
+        var arr = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z','0','1','2','3','4','5','6','7','8','9'];
+        var str = '';
+        for(var i = 0 ; i < 4 ; i ++ )
+            str += ''+arr[Math.floor(Math.random() * arr.length)];
+        return str;
+    }
+		 var ma=document.getElementById('yzm');
+		 ma.onclick=function(){
+		 	ma.innerHTML=yzm()
+		 }
+		 $('.middle-one ul li a').addClass('remove')
+		 $('.middle-one ul li input').click(function(){
+		 	$('.middle-one ul li a').addClass('remove').removeClass('remove2')
+		 	.eq($(this).index('.middle-one ul li input')).addClass('remove2')
+		 })
+		 
+		 
+		 //数据
+		var oIn = document.getElementsByTagName('input');
+		oIn[2].onblur=function(){
+			localStorage.setItem('mima',oIn[1].value);
+			localStorage.setItem('mima2',oIn[2].value);
+		}			
+//			localStorage.setItem('mima3',oIn[3].value);	
+		oIn[1].onblur=function(){	
+			localStorage.setItem('mima3',oIn[0].value);
+		}
+		
+//		var c=localStorage.getItem('mima3');
+		oIn[3].onclick=function(){
+			var a=localStorage.getItem('mima');
+			var b=localStorage.getItem('mima2');
+			if(a!=b){
+			$('.zaici').text('---两次输入密码不一致').css({display:'block',color:'red'})
+		}
+		}
+		var reg=/^\d+$/;
+		oIn[0].onblur=function(){
+			var c=localStorage.getItem('mima3');
+			if(reg.test(c)==true){
+				$('.zaici2').text('不能输入纯数字！，请修改').css({display:'block',color:'red'})
+				return false;
+			}
+			else{
+				$('.zaici2').text('不是纯数字！通过').css({display:'block',color:'red'})
+				return true;
+		}}
+		oIn[4].onblur=function(){
+			localStorage.setItem('mima4',oIn[4].value);
+			var d=localStorage.getItem('mima4');
+//			$('#yzm').val()
+//			alert($('#yzm').text())
+			if(d!=$('#yzm').text()){
+				$('.yan2').text('验证码不对应').css({display:'block',color:'red'})
+			}
+		}
+		oIn[7].onclick=function(){
+			localStorage.setItem('mima',oIn[1].value);
+			localStorage.setItem('mima2',oIn[2].value);
+			localStorage.setItem('mima3',oIn[0].value);
+			localStorage.setItem('mima4',oIn[4].value);
+			var g=localStorage.getItem('mima4');
+			var d=localStorage.getItem('mima');
+			var e=localStorage.getItem('mima2');
+			var f=localStorage.getItem('mima3');
+			if(d==e){
+				if(g==$('#yzm').text()){
+					$('.denglu3').css('display','block')
+				}
+				
+			}
+		}
+	</script>
+</html>
